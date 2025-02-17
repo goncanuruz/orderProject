@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 namespace OrderProject.Persistence.Contexts
 {
     public class OrderProjectDbContextFactory : IDesignTimeDbContextFactory<OrderProjectDbContext>
-    {
+    { 
         public OrderProjectDbContext CreateDbContext(string[] args)
         {
             var builder = new DbContextOptionsBuilder<OrderProjectDbContext>();
