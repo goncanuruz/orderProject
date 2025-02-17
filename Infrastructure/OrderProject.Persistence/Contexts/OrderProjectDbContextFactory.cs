@@ -19,7 +19,7 @@ namespace OrderProject.Persistence.Contexts
                 .AddJsonFile("appsettings.json")
                 .Build();
             var connectionString = configuration.GetConnectionString("Default");
-            builder.UseSqlServer(connectionString);
+            builder.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 41)));
             return new OrderProjectDbContext(builder.Options);
         }
 
@@ -33,7 +33,7 @@ namespace OrderProject.Persistence.Contexts
             var connectionString =
                 configuration
                     .GetConnectionString("Default");
-            builder.UseSqlServer(connectionString);
+            builder.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 41)));
             return new OrderProjectDbContext(builder.Options);
         }
     }

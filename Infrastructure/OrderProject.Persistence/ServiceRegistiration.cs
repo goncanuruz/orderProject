@@ -22,7 +22,7 @@ namespace OrderProject.Persistence
                 options.EnableSensitiveDataLogging(); // Geliştirme ortamında hassas veri günlüğü için
                 options.UseMySql(
                     configuration.GetConnectionString("Default"),
-                    new MySqlServerVersion(new Version(8, 0, 21)) // MySQL sürümünüzü burada belirtin
+                    new MySqlServerVersion(new Version(8, 0, 41)) // MySQL sürümünüzü burada belirtin
                 );
             }, ServiceLifetime.Scoped);
 

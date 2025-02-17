@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using OrderProject.Application.Abstractions.Services;
 using OrderProject.Application.DTOs;
 using OrderProject.Application.Extensions;
 using OrderProject.Application.MappingProfiles;
