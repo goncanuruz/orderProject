@@ -1,0 +1,15 @@
+﻿using OrderProject.Application.DTOs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OrderProject.Application.ViewModels.Products
+{
+    public class CreateProductDto:ICreateDto
+    {
+        public string Name { get; set; }
+        public int Stock { get; set; }
+    }
+}
