@@ -1,0 +1,21 @@
+services:
+  orderproject.webapi:
+    image: ${DOCKER_REGISTRY-}orderprojectwebapi
+    build:
+      context: .
+      dockerfile: Presentation/OrderProject.WebAPI/Dockerfile
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  seq:
+    image: datalust/seq:latest
+    ports:
+      - "5341:80"
+    environment:
+      ACCEPT_EULA: "Y"
