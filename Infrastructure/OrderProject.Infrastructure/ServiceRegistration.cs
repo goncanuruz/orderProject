@@ -6,6 +6,7 @@ using OrderProject.Application.Abstractions.Services;
 using OrderProject.Application.DTOs;
 using OrderProject.Infrastructure.Services;
 using RabbitMQ.Client;
+using StackExchange.Redis;
 
 namespace OrderProject.Infrastructure
 {
@@ -25,9 +26,23 @@ namespace OrderProject.Infrastructure
             configuration.Bind(settings);
             serviceCollection.AddSingleton(settings);
 
+            serviceCollection.AddSingleton<IConnectionMultiplexer>(sp =>
+            {
+                // Redis yapılandırma ayarlarını alıp parse ediyoruz
+                var redisConfigOptions = ConfigurationOptions.Parse(configuration["Redis:Configuration"], true);
+                return ConnectionMultiplexer.Connect(redisConfigOptions);
+            });
+
+            serviceCollection.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = configuration["Redis:Configuration"] ;
+                options.InstanceName = "OrderProject";
+            });
 
             serviceCollection.AddScoped<IEmailService, EmailService>();
             serviceCollection.AddScoped<IRabbitMqService, RabbitMqService>();
+
+            serviceCollection.AddSingleton<IRedisService, RedisService>();
 
         }
     }
