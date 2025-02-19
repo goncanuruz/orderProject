@@ -27,7 +27,7 @@ namespace OrderProject.WebAPI.Controllers
             return Success(_baseResponse);
         }
         [NonAction]
-        protected IActionResult Success<T>()
+        protected IActionResult Success()
         {
             _baseResponse.SetSuccess("Başarılı");
             return Success(_baseResponse);

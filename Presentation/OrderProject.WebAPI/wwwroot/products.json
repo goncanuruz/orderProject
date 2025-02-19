@@ -1,0 +1,452 @@
+[
+  {
+    "Id": "7b2f8c64-3f8d-41b7-bb8a-7b1f495e1a2e",
+    "Name": "Product 1",
+    "Description": "Description for product 1",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 10.99,
+    "Status": true
+  },
+  {
+    "Id": "8a2f4c83-5b1e-4f7b-a6a5-2a45ea0b9c3a",
+    "Name": "Product 2",
+    "Description": "Description for product 2",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 12.49,
+    "Status": false
+  },
+  {
+    "Id": "95e156a3-0d5f-41a2-aad6-3f6bfa1de6a4",
+    "Name": "Product 3",
+    "Description": "Description for product 3",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 13.99,
+    "Status": true
+  },
+  {
+    "Id": "0b736f3d-6a4d-4af3-9a50-cf9dc5a517d9",
+    "Name": "Product 4",
+    "Description": "Description for product 4",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 15.49,
+    "Status": false
+  },
+  {
+    "Id": "13a4a321-35b8-45b0-87b4-4a82c36a62fe",
+    "Name": "Product 5",
+    "Description": "Description for product 5",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 16.99,
+    "Status": true
+  },
+  {
+    "Id": "ec2e5ed5-82cd-4c1d-bad4-12e0ea7c967d",
+    "Name": "Product 6",
+    "Description": "Description for product 6",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 18.49,
+    "Status": false
+  },
+  {
+    "Id": "d0a31b1c-95ed-43f6-8f6c-3bf2a4a3a9f5",
+    "Name": "Product 7",
+    "Description": "Description for product 7",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 19.99,
+    "Status": true
+  },
+  {
+    "Id": "f21e66e8-4e5f-4d5e-9a71-7ac9a1b39423",
+    "Name": "Product 8",
+    "Description": "Description for product 8",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 21.49,
+    "Status": false
+  },
+  {
+    "Id": "d53f0a2e-c10a-41a7-a16b-9d1d3a24e4f6",
+    "Name": "Product 9",
+    "Description": "Description for product 9",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 22.99,
+    "Status": true
+  },
+  {
+    "Id": "4f22b73c-daf8-42d1-9f8b-4c3a67f9e2e0",
+    "Name": "Product 10",
+    "Description": "Description for product 10",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 24.49,
+    "Status": false
+  },
+  {
+    "Id": "c72e7d2e-0a44-446b-82d7-18e9c29a3a5f",
+    "Name": "Product 11",
+    "Description": "Description for product 11",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 25.99,
+    "Status": true
+  },
+  {
+    "Id": "aa25a6e0-82e5-4e2a-b9d0-71c1ef78c3f0",
+    "Name": "Product 12",
+    "Description": "Description for product 12",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 27.49,
+    "Status": false
+  },
+  {
+    "Id": "95c1ab3a-1fd9-4c9b-94e1-68e9edc1f7a8",
+    "Name": "Product 13",
+    "Description": "Description for product 13",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 28.99,
+    "Status": true
+  },
+  {
+    "Id": "89e3fbe4-47a6-49f4-aee7-3c5a9d7b4c8d",
+    "Name": "Product 14",
+    "Description": "Description for product 14",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 30.49,
+    "Status": false
+  },
+  {
+    "Id": "0d73a9f1-7b2e-4c7a-8d1a-9f3b5c7a2d1f",
+    "Name": "Product 15",
+    "Description": "Description for product 15",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 31.99,
+    "Status": true
+  },
+  {
+    "Id": "a5c2d4e6-f3b7-4d8a-b1e2-7a5b9c6e3f2d",
+    "Name": "Product 16",
+    "Description": "Description for product 16",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 33.49,
+    "Status": false
+  },
+  {
+    "Id": "b1e2c3d4-5f6a-7b8c-9d0e-f1a2b3c4d5e6",
+    "Name": "Product 17",
+    "Description": "Description for product 17",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 34.99,
+    "Status": true
+  },
+  {
+    "Id": "9c8b7a6d-5e4f-3d2c-1b0a-8f7e6d5c4b3a",
+    "Name": "Product 18",
+    "Description": "Description for product 18",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 36.49,
+    "Status": false
+  },
+  {
+    "Id": "8f7e6d5c-4b3a-2d1c-0f9e-8a7b6c5d4e3f",
+    "Name": "Product 19",
+    "Description": "Description for product 19",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 37.99,
+    "Status": true
+  },
+  {
+    "Id": "7e6d5c4b-3a2f-1e0d-9c8b-7a6d5c4b3f2e",
+    "Name": "Product 20",
+    "Description": "Description for product 20",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 39.49,
+    "Status": false
+  },
+  {
+    "Id": "6d5c4b3a-2f1e-0d9c-8b7a-6d5c4b3a2e1f",
+    "Name": "Product 21",
+    "Description": "Description for product 21",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 40.99,
+    "Status": true
+  },
+  {
+    "Id": "5c4b3a2f-1e0d-9c8b-7a6d-5c4b3a2f1e0d",
+    "Name": "Product 22",
+    "Description": "Description for product 22",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 42.49,
+    "Status": false
+  },
+  {
+    "Id": "4b3a2f1e-0d9c-8b7a-6d5c-4b3a2f1e0d9c",
+    "Name": "Product 23",
+    "Description": "Description for product 23",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 43.99,
+    "Status": true
+  },
+  {
+    "Id": "3a2f1e0d-9c8b-7a6d-5c4b-3a2f1e0d9c8b",
+    "Name": "Product 24",
+    "Description": "Description for product 24",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 45.49,
+    "Status": false
+  },
+  {
+    "Id": "2f1e0d9c-8b7a-6d5c-4b3a-2f1e0d9c8b7a",
+    "Name": "Product 25",
+    "Description": "Description for product 25",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 46.99,
+    "Status": true
+  },
+  {
+    "Id": "1e0d9c8b-7a6d-5c4b-3a2f-1e0d9c8b7a6d",
+    "Name": "Product 26",
+    "Description": "Description for product 26",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 48.49,
+    "Status": false
+  },
+  {
+    "Id": "0d9c8b7a-6d5c-4b3a-2f1e-0d9c8b7a6d5c",
+    "Name": "Product 27",
+    "Description": "Description for product 27",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 49.99,
+    "Status": true
+  },
+  {
+    "Id": "c1a2b3d4-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
+    "Name": "Product 28",
+    "Description": "Description for product 28",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 51.49,
+    "Status": false
+  },
+  {
+    "Id": "d4c3b2a1-6f5e-8d7c-9b0a-e1d2c3b4a5f6",
+    "Name": "Product 29",
+    "Description": "Description for product 29",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 52.99,
+    "Status": true
+  },
+  {
+    "Id": "e1f2a3b4-c5d6-7e8f-9a0b-c1d2e3f4a5b6",
+    "Name": "Product 30",
+    "Description": "Description for product 30",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 54.49,
+    "Status": false
+  },
+  {
+    "Id": "f0e1d2c3-b4a5-6978-9a0b-c1d2e3f4a5b6",
+    "Name": "Product 31",
+    "Description": "Description for product 31",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 55.99,
+    "Status": true
+  },
+  {
+    "Id": "a1b2c3d4-e5f6-7a8b-9c0d-a1b2c3d4e5f6",
+    "Name": "Product 32",
+    "Description": "Description for product 32",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 57.49,
+    "Status": false
+  },
+  {
+    "Id": "b2c3d4e5-f6a7-8b9c-0d1e-b2c3d4e5f6a7",
+    "Name": "Product 33",
+    "Description": "Description for product 33",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 58.99,
+    "Status": true
+  },
+  {
+    "Id": "c3d4e5f6-a7b8-9c0d-1e2f-c3d4e5f6a7b8",
+    "Name": "Product 34",
+    "Description": "Description for product 34",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 60.49,
+    "Status": false
+  },
+  {
+    "Id": "d4e5f6a7-b8c9-0d1e-2f3a-d4e5f6a7b8c9",
+    "Name": "Product 35",
+    "Description": "Description for product 35",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 61.99,
+    "Status": true
+  },
+  {
+    "Id": "e5f6a7b8-c9d0-1e2f-3a4b-e5f6a7b8c9d0",
+    "Name": "Product 36",
+    "Description": "Description for product 36",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 63.49,
+    "Status": false
+  },
+  {
+    "Id": "f6a7b8c9-d0e1-2f3a-4b5c-f6a7b8c9d0e1",
+    "Name": "Product 37",
+    "Description": "Description for product 37",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 64.99,
+    "Status": true
+  },
+  {
+    "Id": "a7b8c9d0-e1f2-3a4b-5c6d-a7b8c9d0e1f2",
+    "Name": "Product 38",
+    "Description": "Description for product 38",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 66.49,
+    "Status": false
+  },
+  {
+    "Id": "b8c9d0e1-f2a3-4b5c-6d7e-b8c9d0e1f2a3",
+    "Name": "Product 39",
+    "Description": "Description for product 39",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 67.99,
+    "Status": true
+  },
+  {
+    "Id": "c9d0e1f2-a3b4-5c6d-7e8f-c9d0e1f2a3b4",
+    "Name": "Product 40",
+    "Description": "Description for product 40",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 69.49,
+    "Status": false
+  },
+  {
+    "Id": "d0e1f2a3-b4c5-6d7e-8f9a-d0e1f2a3b4c5",
+    "Name": "Product 41",
+    "Description": "Description for product 41",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 70.99,
+    "Status": true
+  },
+  {
+    "Id": "e1f2a3b4-c5d6-7e8f-9a0b-e1f2a3b4c5d6",
+    "Name": "Product 42",
+    "Description": "Description for product 42",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 72.49,
+    "Status": false
+  },
+  {
+    "Id": "f2a3b4c5-d6e7-8f9a-0b1c-f2a3b4c5d6e7",
+    "Name": "Product 43",
+    "Description": "Description for product 43",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 73.99,
+    "Status": true
+  },
+  {
+    "Id": "a3b4c5d6-e7f8-9a0b-1c2d-a3b4c5d6e7f8",
+    "Name": "Product 44",
+    "Description": "Description for product 44",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 75.49,
+    "Status": false
+  },
+  {
+    "Id": "b4c5d6e7-f8a9-0b1c-2d3e-b4c5d6e7f8a9",
+    "Name": "Product 45",
+    "Description": "Description for product 45",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 76.99,
+    "Status": true
+  },
+  {
+    "Id": "c5d6e7f8-a9b0-1c2d-3e4f-c5d6e7f8a9b0",
+    "Name": "Product 46",
+    "Description": "Description for product 46",
+    "Category": "Electronics",
+    "Unit": "pcs",
+    "UnitPrice": 78.49,
+    "Status": false
+  },
+  {
+    "Id": "d6e7f8a9-b0c1-2d3e-4f5a-d6e7f8a9b0c1",
+    "Name": "Product 47",
+    "Description": "Description for product 47",
+    "Category": "Clothing",
+    "Unit": "kg",
+    "UnitPrice": 79.99,
+    "Status": true
+  },
+  {
+    "Id": "e7f8a9b0-c1d2-3e4f-5a6b-e7f8a9b0c1d2",
+    "Name": "Product 48",
+    "Description": "Description for product 48",
+    "Category": "Food",
+    "Unit": "ltr",
+    "UnitPrice": 81.49,
+    "Status": false
+  },
+  {
+    "Id": "f8a9b0c1-d2e3-4f5a-6b7c-f8a9b0c1d2e3",
+    "Name": "Product 49",
+    "Description": "Description for product 49",
+    "Category": "Books",
+    "Unit": "set",
+    "UnitPrice": 82.99,
+    "Status": true
+  },
+  {
+    "Id": "a9b0c1d2-e3f4-5a6b-7c8d-a9b0c1d2e3f4",
+    "Name": "Product 50",
+    "Description": "Description for product 50",
+    "Category": "Toys",
+    "Unit": "pack",
+    "UnitPrice": 84.49,
+    "Status": false
+  }
+]

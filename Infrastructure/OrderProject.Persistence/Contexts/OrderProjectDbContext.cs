@@ -11,6 +11,7 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using OrderProject.Domain.Entities.Orders;
 
 namespace OrderProject.Persistence.Contexts
 {
@@ -20,6 +21,8 @@ namespace OrderProject.Persistence.Contexts
         {
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
