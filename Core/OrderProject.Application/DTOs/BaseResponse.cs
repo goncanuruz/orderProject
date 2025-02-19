@@ -49,7 +49,7 @@ namespace OrderProject.Application.DTOs
         }
         public BaseResponse<ResponseType, ResponseDetail> SetError(string errorMessage, object? errorDetails = null, string? errorCode = null)
         {
-            Status = ResponseStatus.Error;
+            Status = ResponseStatus.Failed;
             Message = errorMessage;
             ErrorDetails = errorDetails;
             Code = errorCode;
@@ -61,8 +61,8 @@ namespace OrderProject.Application.DTOs
             [Description("Success")]
             Success = 1,
 
-            [Description("Error")]
-            Error = 2,
+            [Description("Failed")]
+            Failed = 2,
         }
     }
 }

@@ -12,16 +12,16 @@ namespace OrderProject.Application.Validators.Products
     {
         public CreateProductValidator()
         {
-            RuleFor(p => p.Name)
-                .NotEmpty().WithMessage("Ürün adı boş geçmeyiniz")
-                .Length(5, 50).WithMessage("Ürün adı 5-50 karakter arasında olmalıdır");
+            RuleFor(p => p.Unit)
+                .NotEmpty().WithMessage("Zorunludur")
+                .Length(5, 50).WithMessage("5-50 karakter arasında olmalıdır");
 
-            RuleFor(p => p.Stock)
+            RuleFor(p => p.UnitPrice)
     .NotEmpty()
     .NotNull()
-        .WithMessage("Lütfen stok bilgisini boş geçmeyiniz.")
+        .WithMessage("Lütfen fiyat bilgisini boş geçmeyiniz.")
     .Must(s => s >= 0)
-        .WithMessage("Stok bilgisi negatif olamaz!");
+        .WithMessage("Fiyat bilgisi negatif olamaz!");
 
         }
     }
