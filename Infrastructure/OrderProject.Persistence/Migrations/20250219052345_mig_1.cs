@@ -25,7 +25,7 @@ namespace OrderProject.Persistence.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     CustomerGsm = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    TotalAmount = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    TotalAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreateTime = table.Column<DateTime>(type: "datetime(6)", nullable: true),
                     UpdateTime = table.Column<DateTime>(type: "datetime(6)", nullable: true),
                     DeleteTime = table.Column<DateTime>(type: "datetime(6)", nullable: true),
@@ -53,7 +53,7 @@ namespace OrderProject.Persistence.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Unit = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    UnitPrice = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    UnitPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Status = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     CreateTime = table.Column<DateTime>(type: "datetime(6)", nullable: true),
                     UpdateTime = table.Column<DateTime>(type: "datetime(6)", nullable: true),
@@ -76,8 +76,8 @@ namespace OrderProject.Persistence.Migrations
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     OrderId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     ProductId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
-                    UnitPrice = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
-                    Amount = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    UnitPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreateTime = table.Column<DateTime>(type: "datetime(6)", nullable: true),
                     UpdateTime = table.Column<DateTime>(type: "datetime(6)", nullable: true),
                     DeleteTime = table.Column<DateTime>(type: "datetime(6)", nullable: true),

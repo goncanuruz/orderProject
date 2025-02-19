@@ -11,7 +11,7 @@ using OrderProject.Persistence.Contexts;
 namespace OrderProject.Persistence.Migrations
 {
     [DbContext(typeof(OrderProjectDbContext))]
-    [Migration("20250219052114_mig_1")]
+    [Migration("20250219052345_mig_1")]
     partial class mig_1
     {
         /// <inheritdoc />
@@ -55,7 +55,7 @@ namespace OrderProject.Persistence.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<decimal>("TotalAmount")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime?>("UpdateTime")
                         .HasColumnType("datetime(6)");
@@ -74,7 +74,7 @@ namespace OrderProject.Persistence.Migrations
                         .HasColumnType("char(36)");
 
                     b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime?>("CreateTime")
                         .HasColumnType("datetime(6)");
@@ -98,7 +98,7 @@ namespace OrderProject.Persistence.Migrations
                         .HasColumnType("char(36)");
 
                     b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime?>("UpdateTime")
                         .HasColumnType("datetime(6)");
@@ -153,7 +153,7 @@ namespace OrderProject.Persistence.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime?>("UpdateTime")
                         .HasColumnType("datetime(6)");
