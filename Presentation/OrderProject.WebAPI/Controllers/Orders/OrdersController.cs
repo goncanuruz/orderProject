@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OrderProject.Application.Abstractions.Services;
 using OrderProject.Application.Repositories;
 using OrderProject.Application.ViewModels.Orders;
 using OrderProject.Application.ViewModels.Products;
@@ -13,11 +14,14 @@ namespace OrderProject.WebAPI.Controllers.Orders
         private readonly IReadRepository<Product> _productRepositories;
         private readonly IWriteRepository<Order> _orderRepositories;
         private readonly IReadRepository<Order> _orderReadRepositories;
-        public OrdersController(IReadRepository<Product> productRepositories, IWriteRepository<Order> orderRepositories, IReadRepository<Order> orderReadRepositories)
+
+        private readonly IRabbitMqService _rabbitMqService;
+        public OrdersController(IReadRepository<Product> productRepositories, IWriteRepository<Order> orderRepositories, IReadRepository<Order> orderReadRepositories, IRabbitMqService rabbitMqService)
         {
             _productRepositories = productRepositories;
             _orderRepositories = orderRepositories;
             _orderReadRepositories = orderReadRepositories;
+            _rabbitMqService = rabbitMqService;
         }
 
 
@@ -36,7 +40,13 @@ namespace OrderProject.WebAPI.Controllers.Orders
             orderEntity.Id = Guid.NewGuid();
             _orderRepositories.Create(orderEntity);
 
-            //todo : mail gönderimi
+            //eposta gönderim kuyruğu
+            _rabbitMqService.SendEmailQueque(new Application.DTOs.SendEmailQuequeDto 
+            {
+                Content="Siparişiniz başarıyla alındı",
+                Email=input.CustomerEmail,
+                Subject="Siparişiniz Hakkında"
+            });
             return Success(orderEntity.Id);
         }
     }

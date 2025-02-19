@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Connections;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OrderProject.Application.Abstractions.Services;
+using OrderProject.Application.DTOs;
+using OrderProject.Infrastructure.Services;
 using RabbitMQ.Client;
 
 namespace OrderProject.Infrastructure
@@ -16,6 +19,16 @@ namespace OrderProject.Infrastructure
 
             var connection = factory.CreateConnection();
             serviceCollection.AddSingleton<IConnection>(connection);
+
+
+            ApplicationSettings settings = new ApplicationSettings();
+            configuration.Bind(settings);
+            serviceCollection.AddSingleton(settings);
+
+
+            serviceCollection.AddScoped<IEmailService, EmailService>();
+            serviceCollection.AddScoped<IRabbitMqService, RabbitMqService>();
+
         }
     }
 }

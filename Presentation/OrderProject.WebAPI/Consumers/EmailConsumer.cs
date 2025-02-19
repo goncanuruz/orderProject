@@ -4,6 +4,10 @@ using RabbitMQ.Client;
 using OrderProject.Application.Consts;
 using System.Text;
 using OrderProject.Application.Extensions;
+using OrderProject.Infrastructure.Services;
+using Newtonsoft.Json;
+using OrderProject.Application.DTOs;
+using OrderProject.Application.Abstractions.Services;
 
 namespace OrderProject.WebAPI.Consumers
 {
@@ -14,10 +18,12 @@ namespace OrderProject.WebAPI.Consumers
         private IModel? _channel;
         private readonly string _consumerName = ConsumerConsts.EmailConsumer;
         private readonly ILogger<SerilogMiddleware> Log;
-        public EmailConsumer(IConnection connection, ILogger<SerilogMiddleware> log)
+        private readonly IServiceProvider _serviceProvider;
+        public EmailConsumer(IConnection connection, ILogger<SerilogMiddleware> log, IServiceProvider serviceProvider)
         {
             _connection = connection;
             Log = log;
+            _serviceProvider = serviceProvider;
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
@@ -34,8 +40,14 @@ namespace OrderProject.WebAPI.Consumers
                     var message = Encoding.UTF8.GetString(ea.Body.ToArray());
                     Log.Log(LogLevel.Information, $"{_consumerName} message: {message}");
 
-                    //email gönderim işlemi
+                    SendEmailQuequeDto emailData = JsonConvert.DeserializeObject<SendEmailQuequeDto>(message);
 
+                    using (IServiceScope scope = _serviceProvider.CreateScope())
+                    {
+                        var emailService = scope.ServiceProvider.GetRequiredService<IEmailService>();
+
+                        await emailService.SendEmail(emailData.Email,emailData.Content,emailData.Subject);
+                    }
 
                     _channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
                 };

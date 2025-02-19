@@ -11,6 +11,7 @@ using Serilog;
 using Serilog.Context;
 using Serilog.Core;
 using Microsoft.AspNetCore.HttpLogging;
+using OrderProject.WebAPI.Consumers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,7 +54,7 @@ builder.Services.AddControllers(opt =>
     opt.Filters.Add<ValidationFilter>();
 
 });
-
+builder.Services.AddHostedService<EmailConsumer>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
