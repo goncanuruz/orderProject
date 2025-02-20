@@ -1,6 +1,9 @@
 Proje Bilgileri
+
 Framework: .NET 6
+
 Dil: C#
+
 Veritabanı: MySQL
 
 
@@ -14,5 +17,6 @@ cd OrderProject
 Aşağıdaki komutu çalıştırın:
 
 docker-compose down && docker-compose build --no-cache && docker-compose up -d
+
 Bu komutlar ile Docker ortamında Seq, Redis ve RabbitMQ kurulumu gerçekleştirilecektir.
 
